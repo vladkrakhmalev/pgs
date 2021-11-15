@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Muller 300';
+  font-weight: 300;
+  src: url('../fonts/MullerLight.woff');
+}
+@font-face {
+  font-family: 'Muller 400';
+  font-weight: 400;
+  src: url('../fonts/MullerRegular.woff');
+}
+@font-face {
+  font-family: 'Mulle 500r';
+  font-weight: 500;
+  src: url('../fonts/MullerMedium.woff');
+}
+@font-face {
+  font-family: 'Muller 600';
+  font-weight: 600;
+  src: url('../fonts/MullerBold.woff');
+}
+@font-face {
+  font-family: 'Muller 700';
+  font-weight: 700;
+  src: url('../fonts/MullerExtraBold.woff');
+}
+@font-face {
+  font-family: 'Muller 800';
+  font-weight: 800;
+  src: url('../fonts/MullerExtraBold.woff');
+}
+@font-face {
+  font-family: 'Muller 900';
+  font-weight: 900;
+  src: url('../fonts/MullerBlack.woff');
+}
+@font-face {
+  font-family: 'PF Din Display Pro 300';
+  font-weight: 300;
+  src: url('../fonts/PFDinDisplayPro-Light.woff');
+}
+@font-face {
+  font-family: 'PF Din Display Pro 400';
+  font-weight: 400;
+  src: url('../fonts/PFDinDisplayPro-Regular.woff');
+}
+@font-face {
+  font-family: 'PF Din Display Pro 500';
+  font-weight: 500;
+  src: url('../fonts/PFDinDisplayPro-Medium.woff');
+}
+@font-face {
+  font-family: 'PF Din Display Pro 800';
+  font-weight: 800;
+  src: url('../fonts/PFDinDisplayPro-Bold.woff');
+}
+@font-face {
+  font-family: 'PF Din Display Pro 900';
+  font-weight: 900;
+  src: url('../fonts/PFDinDisplayPro-Black.woff');
+}

@@ -1,0 +1,2612 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul:not(.list) {
+  list-style: none;
+}
+
+.list {
+  padding-left: 30px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.btn {
+  display: block;
+  cursor: pointer;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 3px;
+  border: none;
+  font-family: "PF Din Display Pro 500";
+  font-size: 16px;
+  letter-spacing: 0.068em;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 15px 30px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.btn._blue {
+  background-color: #00245b;
+}
+.btn._blue:hover {
+  background-color: #ff4c38;
+}
+.btn._orange {
+  background-color: #ff4c38;
+}
+.btn._orange:hover {
+  background-color: #00245b;
+}
+
+.display {
+  font-family: "Muller 800";
+  font-size: 93.3px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0 1px #00245b;
+  margin-bottom: -60px;
+}
+.display._dark {
+  color: #00245b;
+  text-shadow: 0 0 1px #fff;
+}
+
+.bold {
+  font-family: "PF Din Display Pro 800";
+  font-size: 16px;
+  letter-spacing: 0.068em;
+  text-transform: uppercase;
+  color: #00245b;
+}
+
+.h1 {
+  font-family: "Muller 800";
+  font-size: 50px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #00245b;
+  margin: 10px 0;
+}
+.h1 ._underline {
+  color: #00245b;
+  display: inline-block;
+  background-color: #ff4c38;
+  line-height: 0;
+  height: 20px;
+}
+
+.h2 {
+  font-family: "Muller 800";
+  font-size: 50px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #00245b;
+  margin: 10px 0;
+}
+.h2 ._underline {
+  color: #00245b;
+  display: inline-block;
+  background-color: #ff4c38;
+  line-height: 0;
+  height: 20px;
+}
+
+.h3 {
+  font-family: "Muller 800";
+  font-size: 35px;
+  line-height: 1.2;
+  color: #00245b;
+}
+.h3._dark {
+  color: #fff;
+}
+.h3._small {
+  font-family: "Muller 300";
+  color: #777777;
+  font-size: 28px;
+  margin: 10px;
+}
+.h3 ._underline {
+  color: inherit;
+  display: inline-block;
+  background-color: #ff4c38;
+  line-height: 0;
+  height: 10px;
+}
+
+.text {
+  font-family: "PF Din Display Pro 400";
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.068em;
+  color: #47556b;
+  margin: 10px 0;
+}
+
+._dark p, ._dark a, ._dark li, ._dark input, ._dark select {
+  color: #fff;
+}
+._dark .field._focus .field__input, ._dark .field._error .field._valid .field__input {
+  -webkit-box-shadow: inset 0 0 0 30px #00245b;
+          box-shadow: inset 0 0 0 30px #00245b;
+}
+._dark .checkbox__input:checked + .checkbox__label > .checkbox__icon {
+  background-image: url("../img/i_check.png");
+  background-color: #ff4c38;
+  border: 1px solid #ff4c38;
+}
+._dark .checkbox__icon {
+  width: 21px;
+  height: 21px;
+  background-image: none;
+  border-radius: 5px;
+}
+
+.link-back {
+  font-family: "PF Din Display Pro 400";
+  font-size: 18px;
+  letter-spacing: 0.068em;
+  color: #47556b;
+  padding-left: 20px;
+  background-image: url("../img/i_arrow_yellow.png");
+  background-repeat: no-repeat;
+  background-position: center left;
+  margin: 0 0 30px;
+}
+.link-back:hover {
+  text-decoration: underline;
+}
+
+.date {
+  font-family: "PF Din Display Pro 400";
+  font-size: 18px;
+  letter-spacing: 0.068em;
+  color: #47556b;
+}
+
+.title {
+  font-family: "Muller 800";
+  font-size: 28px;
+  color: #00245b;
+}
+.title ._underline {
+  color: inherit;
+  display: inline-block;
+  background-color: #ff4c38;
+  line-height: 0;
+  height: 10px;
+}
+
+.small {
+  font-family: "PF Din Display Pro 400";
+  font-size: 14px;
+  letter-spacing: 0.068em;
+  color: #6a7688;
+}
+
+.link-btn {
+  display: inline-block;
+  font-family: "PF Din Display Pro 800";
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.068em;
+  color: #00245b;
+  position: relative;
+}
+.link-btn:hover::after {
+  width: 100%;
+}
+.link-btn::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 3px;
+  background-color: #ff4c38;
+  position: absolute;
+  z-index: 0;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr repeat(12, minmax(10px, 70px)) 1fr;
+  margin: 0 auto;
+  grid-gap: 20px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.container > * {
+  grid-column: 2/-2;
+}
+.container > .text {
+  margin: 0;
+}
+
+.container-min {
+  max-width: 1060px;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(10px, 70px));
+  margin: 0 auto;
+  grid-gap: 20px;
+}
+.container-min > * {
+  grid-column: 1/-1;
+}
+.container-min > .text {
+  margin: 0;
+}
+
+.header {
+  padding: 16px 0 0;
+}
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-column: 2/7;
+}
+.header__logo-img {
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 15px 0 0;
+}
+.header__logo-title {
+  font-family: "Muller 800", sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #00245b;
+}
+.header__logo-title ._orange {
+  color: #ff4c38;
+}
+.header__items {
+  grid-column: 7/-2;
+  grid-row: 1;
+  align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.header__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__item-icon {
+  width: 26px;
+  height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50px;
+  background-color: #ff4c38;
+  margin: 0 10px 0 0;
+}
+.header__icon-img {
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.header__text {
+  font-size: 18px;
+  font-family: "PF Din Display Pro 300", serif;
+}
+.header__menu {
+  grid-column: 2/-3;
+  grid-row: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__menu-link {
+  font-family: "PF Din Display Pro 800";
+  padding: 10px 0 15px 0;
+  position: relative;
+}
+.header__menu-link::after {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 4px;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.header__menu-link:hover::after, .header__menu-link._active::after {
+  width: 100%;
+  background-color: #ff4c38;
+}
+.header__menu-btn {
+  display: none;
+}
+.header__search {
+  grid-row: 2;
+  background-color: #fff;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__search._open {
+  z-index: 5;
+}
+.header__search._open .header__search-input {
+  opacity: 1;
+  width: 100%;
+}
+.header__search._open .header__search-btn._btn-open {
+  display: none;
+}
+.header__search._open .header__search-btn._btn-close {
+  display: block;
+}
+.header__search-input {
+  display: block;
+  border: none;
+  background: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 0%;
+  opacity: 0;
+  font-family: "PF Din Display Pro 400";
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #47556b;
+  border-bottom: 1px solid #00245b29;
+}
+.header__search-btn {
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 0 0 5px 10px;
+  cursor: pointer;
+}
+.header__search-btn._btn-open {
+  width: 20px;
+}
+.header__search-btn._btn-close {
+  width: 15px;
+  display: none;
+}
+
+.mainscreen__slide {
+  padding: 110px 0 90px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+}
+.mainscreen__content {
+  max-width: 500px;
+}
+.mainscreen__btns {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.mainscreen__btn {
+  margin-right: 25px;
+}
+.mainscreen__control {
+  position: relative;
+}
+.mainscreen__arrows {
+  position: absolute;
+  bottom: 0;
+}
+.mainscreen__pagination {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.arrows__arrow {
+  display: block;
+  width: 71px;
+  height: 71px;
+  background-color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.arrows__arrow:hover {
+  background-color: #ff4c38;
+}
+.arrows__arrow ._left {
+  height: 100%;
+  background-image: url("../img/i_arrow_blue.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.arrows__arrow ._left:hover {
+  background-image: url("../img/i_arrow_white.png");
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.arrows__arrow ._right {
+  height: 100%;
+  background-image: url("../img/i_arrow_blue.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.arrows__arrow ._right:hover {
+  background-image: url("../img/i_arrow_white.png");
+  -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.pagination {
+  height: 71px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.pagination._dark li:hover, .pagination._dark li.slick-active {
+  border: 2px solid #ff4c38;
+}
+.pagination._dark li:hover button, .pagination._dark li.slick-active button {
+  background-color: #ff4c38;
+}
+.pagination li {
+  display: block;
+  margin: 10px;
+  width: 17px;
+  height: 17px;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.pagination li:hover, .pagination li.slick-active {
+  border: 2px solid #2d4368;
+}
+.pagination li:hover button, .pagination li.slick-active button {
+  background-color: #2d4368;
+}
+.pagination button {
+  border: none;
+  display: block;
+  width: 9px;
+  height: 9px;
+  background-color: #bfbfbf;
+  color: transparent;
+  border-radius: 50px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.about {
+  margin: 100px 0;
+}
+.about__content {
+  grid-column: 2/8;
+  max-width: 500px;
+  align-self: center;
+}
+.about__image {
+  grid-column: 8/-2;
+  position: relative;
+}
+.about__quote {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 300px;
+  padding: 70px 35px 35px 35px;
+  background-color: #fff;
+  background-image: url("../img/i_q_orange.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 35px 35px;
+}
+
+.services {
+  margin: 60px 0;
+}
+.services__slider {
+  grid-column: 2/-1;
+  margin: 0 -10px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.services__slide {
+  border: 1px solid #00245b44;
+  padding: 50px 30px 30px;
+  border-bottom: 4px solid #ff4c38;
+  max-width: 250px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  margin: 10px;
+}
+.services__slide:hover {
+  background-color: #2c478a;
+}
+.services__slide:hover .services__tilte {
+  color: #fff;
+}
+.services__slide:hover .services__btn {
+  background-image: url("../img/i_shape_plus_hover.png");
+}
+.services__tilte {
+  font-family: "PF Din Display Pro 800";
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.068em;
+  color: #00245b;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.services__btn {
+  margin-top: 30px;
+  display: block;
+  width: 23px;
+  height: 25px;
+  background-image: url("../img/i_shape_plus.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.about-2 {
+  padding-top: 120px;
+  background-color: #f3f3f3;
+}
+.about-2__img {
+  grid-column: 1/8;
+  position: relative;
+  z-index: 5;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-2__content {
+  background-color: #fff;
+  grid-column: 8/-2;
+  padding: 50px 40px;
+  height: 100%;
+  z-index: 5;
+}
+.about-2__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.projects {
+  padding: 130px 0;
+}
+.projects__arrows {
+  grid-column: 2/4;
+  align-self: center;
+}
+.projects__arrow {
+  display: block;
+  padding: 15px 20px;
+  background-color: #ff4c38;
+  border-radius: 3px;
+  margin: 20px 0;
+  font-family: "PF Din Display Pro 800";
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.068em;
+  color: #fefeff;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.projects__arrow:hover {
+  background-color: #00245b;
+}
+.projects__slider {
+  grid-column: 4/-1;
+  margin: 50px -10px 0;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.projects__slide {
+  max-width: 420px;
+  margin: 10px;
+}
+.projects__img {
+  height: 300px;
+}
+.projects__title {
+  font-family: "PF Din Display Pro 800";
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.068em;
+  color: #00245b;
+  margin: 20px 0 10px;
+}
+.projects__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+}
+.projects__link:hover .projects__link-icon {
+  border: 2px solid #ff4c38;
+  background-image: url("../img/i_shape_plus_hover.png");
+}
+.projects__link-text {
+  font-family: "PF Din Display Pro 800";
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.068em;
+  color: #00245b;
+  display: block;
+}
+.projects__link-icon {
+  display: block;
+  background-image: url("../img/i_shape_plus.png");
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: center;
+  width: 18px;
+  height: 18px;
+  padding: 13px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  margin: 0 0 0 5px;
+  border: 2px solid transparent;
+  border-radius: 3px;
+}
+
+.brends {
+  margin: 50px 0;
+}
+.brends__slider {
+  margin: 20px 0;
+  position: relative;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.brends__slide {
+  width: 200px;
+}
+.brends .slick-arrow {
+  position: absolute;
+  z-index: 5;
+  display: block;
+  color: transparent;
+  border: none;
+  width: 42px;
+  height: 42px;
+  background-color: #1c5fc3;
+  border-radius: 50px;
+  background-image: url("../img/i_arrow_white.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  cursor: pointer;
+}
+.brends .slick-prev {
+  -webkit-transform: rotate(180deg) translate(0, 50%);
+      -ms-transform: rotate(180deg) translate(0, 50%);
+          transform: rotate(180deg) translate(0, 50%);
+  left: 0;
+}
+.brends .slick-next {
+  right: 0;
+}
+.brends__control {
+  margin: auto;
+}
+
+.news {
+  padding: 80px 0;
+  background-color: #00245b;
+}
+.news__h3 {
+  grid-column: 2/4;
+}
+.news__tags {
+  grid-column: 4/10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  align-self: end;
+  margin-bottom: 10px;
+}
+.news__tag {
+  display: block;
+  font-family: "Muller 300";
+  font-size: 18px;
+  line-height: 1.2;
+  text-decoration: underline;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+  margin-right: 20px;
+}
+.news__a {
+  grid-column: 10/14;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: end;
+  cursor: pointer;
+}
+.news__a-text {
+  font-family: "Muller 300";
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+}
+.news__a-icon {
+  display: block;
+  width: 42px;
+  height: 42px;
+  border-radius: 5px;
+  background-image: url("../img/i_arrow_white.png");
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: center;
+  background-color: #ff4c38;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-left: 10px;
+}
+.news__slider {
+  margin: 20px -10px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.news__slide {
+  display: block;
+  margin: 10px;
+}
+.news__slide-content {
+  background-color: #fff;
+  padding: 20px;
+}
+.news__control {
+  margin: auto;
+}
+
+.reviews {
+  padding: 90px 0;
+}
+.reviews__slider {
+  margin: 20px -10px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.reviews__slide {
+  padding: 40px;
+  background-color: #fff;
+  display: grid !important;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  grid-template-columns: 85px auto;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  border-bottom: 4px solid #ff4c38;
+  margin: 10px;
+}
+.reviews__slide::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../img/i_q_blue.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  top: 40px;
+  right: 40px;
+}
+.reviews__slide._dark {
+  background-color: #00245b;
+  border: none;
+  border-bottom: 4px solid #00245b;
+}
+.reviews__slide._dark .reviews__title,
+.reviews__slide._dark .reviews__text {
+  color: #fefefe;
+}
+.reviews__img {
+  grid-row: span 2;
+}
+.reviews__title {
+  font-family: "PF Din Display Pro 500";
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.068em;
+  color: #00245b;
+}
+.reviews__text {
+  grid-column: 2;
+  font-family: "PF Din Display Pro 400";
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.025em;
+  color: #333333;
+}
+
+.footer {
+  background-color: #0a1229;
+  padding: 50px 0;
+}
+.footer__info {
+  grid-column: 2/8;
+  align-self: center;
+}
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__logo-img {
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 67px;
+  margin: 10px 10px 10px 0;
+}
+.footer__logo-title {
+  font-family: "Muller 800";
+  font-size: 25px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 10px;
+}
+.footer__logo-title ._orange {
+  color: #ff4c38;
+}
+.footer__items {
+  max-width: 350px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0;
+}
+.footer__item-icon {
+  margin: 8px 8px 8px 0;
+}
+.footer__item-img {
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.footer__item-text {
+  font-family: "PF Din Display Pro 300";
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+}
+.footer__menu {
+  grid-column: 8/-2;
+  align-self: center;
+}
+.footer__title {
+  font-family: "PF Din Display Pro 400";
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+}
+.footer__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  margin: 30px 0;
+}
+.footer__menu-item {
+  display: block;
+  font-family: "PF Din Display Pro 300";
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.footer__line {
+  width: 100%;
+  height: 1px;
+  background-color: #273459;
+  margin: 20px 0 30px;
+}
+.footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__link {
+  text-decoration: underline;
+}
+.footer__link, .footer__text {
+  display: block;
+  font-family: "PF Din Display Pro 400";
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.breadcrumb {
+  padding: 80px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.breadcrumb__display {
+  margin-bottom: -75px;
+  color: #efefef;
+}
+
+.objects {
+  padding: 70px 0;
+}
+.objects__tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -8px 40px;
+}
+.objects__tag {
+  font-family: "PF Din Display Pro 300";
+  font-size: 16px;
+  letter-spacing: 0.025em;
+  color: #586880;
+  border: none;
+  background-color: transparent;
+  margin: 8px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.objects__tag:hover {
+  color: #00245b;
+  border-bottom: 2px solid #ff4c38;
+}
+.objects__tag._active {
+  font-family: "PF Din Display Pro 500";
+  font-size: 18px;
+  color: #00245b;
+  border-bottom: 2px solid #ff4c38;
+}
+.objects__item {
+  grid-column: span 4;
+  position: relative;
+}
+.objects__wrapper {
+  margin: 50px 0 0;
+}
+.objects__wrapper.first {
+  margin: 0;
+}
+.objects__info {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 0;
+  left: 0;
+}
+.objects__info-wrapper {
+  background-color: #fff;
+  padding: 15px 15px 0;
+  width: 210px;
+}
+.objects__info-text {
+  font-family: "PF Din Display Pro 500";
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #333333;
+}
+.objects__info-date {
+  margin-top: 5px;
+  font-family: "PF Din Display Pro 500";
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #777777;
+}
+.objects__info-arrow {
+  height: 60px;
+  width: 60px;
+  background-color: #ff4c38;
+  background-image: url("../img/i_arrow_white.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+}
+.objects__btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: transparent;
+  border: 2px solid #00245b;
+  border-radius: 3px;
+  padding: 25px 45px;
+  font-family: "PF Din Display Pro 500";
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.068em;
+  color: #0a1229;
+  margin: 50px auto 0;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.objects__btn:hover {
+  background-color: #00245b;
+  color: #fff;
+}
+
+.one-news {
+  padding: 50px 0;
+}
+.one-news__img {
+  max-width: 945px;
+  margin: 30px auto;
+}
+
+.more-news {
+  padding: 60px 0;
+}
+.more-news__titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+.more-news__item {
+  margin: 20px 0;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d9d9d9;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  padding: 20px;
+}
+.more-news__item:hover {
+  background-color: #00245b19;
+}
+.more-news__mounth {
+  padding: 10px 20px;
+  min-width: 100px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #ff4c38;
+  font-family: "PF Din Display Pro 400";
+  font-size: 20px;
+  letter-spacing: 0.068em;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.about-us {
+  padding: 50px 0;
+}
+.about-us__numbers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.about-us__number {
+  border-left: 4px solid #ff4c38;
+  padding-left: 30px;
+}
+.about-us__number-num {
+  font-family: "Muller 800";
+  font-size: 50px;
+  color: #00245b;
+}
+.about-us__number-text {
+  max-width: 200px;
+  font-family: "PF Din Display Pro 400";
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.068em;
+  color: #47556b;
+}
+
+.about-us-2 {
+  background-image: url("../img/img_about_us.jpg");
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+.about-us-2__content {
+  grid-column: 7/-2;
+  background-color: #ff4c38;
+  padding: 50px;
+}
+
+.about-us-3 {
+  padding: 70px 0;
+}
+.about-us-3__item {
+  grid-column: span 6;
+  padding: 40px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-us-3__item._black {
+  background-image: url("../img/bg_about_us_1.png");
+}
+.about-us-3__item._blue {
+  background-image: url("../img/bg_about_us_2.png");
+}
+.about-us-3__content {
+  grid-column: 1/6;
+  align-self: center;
+}
+.about-us-3__img {
+  grid-column: 7/-1;
+  margin: 50px 0;
+}
+
+.one-article {
+  padding: 50px 0;
+}
+
+.foundation-1 {
+  padding: 50px 0;
+}
+.foundation-1__item {
+  grid-column: span 6;
+  margin: 30px 0;
+}
+.foundation-1__img {
+  margin-bottom: 20px;
+}
+.foundation-1__title {
+  font-family: "PF Din Display Pro 800";
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.068em;
+  color: #333333;
+  margin: 10px 0;
+}
+.foundation-1__price {
+  font-family: "PF Din Display Pro 400";
+  font-size: 18px;
+  letter-spacing: 0.068em;
+  color: #47556b;
+}
+
+.foundation-2 {
+  padding: 50px 0;
+}
+.foundation-2__content {
+  display: none;
+}
+.foundation-2__content._visible {
+  display: block;
+}
+.foundation-2__bg {
+  background-color: #00245b;
+  grid-column: 2/-1;
+  grid-row: 1;
+  height: 100%;
+}
+.foundation-2__calc {
+  background-color: #00245b;
+  grid-column: 2/-2;
+  grid-row: 1;
+  padding: 70px 0 70px 100px;
+}
+.foundation-2__title {
+  font-family: "PF Din Display Pro 400";
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.foundation-2__step {
+  margin: 40px 0;
+}
+.foundation-2__step-current {
+  font-size: 30px;
+  font-family: "Muller 800";
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #ff4c38;
+  display: inline-block;
+  line-height: 5px;
+  height: 15px;
+}
+.foundation-2__step-all {
+  font-size: 20px;
+  font-family: "Muller 400";
+  color: #ffffff;
+}
+.foundation-2__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin: 30px 0;
+}
+.foundation-2__checkbox {
+  margin: 20px 0 20px;
+}
+.foundation-2__btn {
+  -ms-flex-item-align: center;
+      align-self: center;
+  border: 2px solid #ff4c38;
+}
+
+.foundation-3 {
+  padding: 40px 0;
+}
+.foundation-3__content {
+  max-width: 450px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.foundation-4 {
+  padding: 40px 0;
+}
+.foundation-4__container {
+  grid-gap: 0;
+  grid-template-columns: repeat(12, minmax(10px, 90px));
+}
+.foundation-4__heading {
+  margin: 20px 0 50px;
+}
+.foundation-4__item {
+  grid-column: span 4;
+  position: relative;
+  width: 100%;
+}
+.foundation-4__wrapper {
+  background-color: #00245b99;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.foundation-4__wrapper:hover {
+  opacity: 1;
+}
+.foundation-4__info {
+  margin-top: auto;
+  margin-right: 5px;
+}
+.foundation-4__title {
+  font-family: "PF Din Display Pro 500";
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  margin: 7px 0;
+}
+.foundation-4__text {
+  font-family: "PF Din Display Pro 400";
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.025em;
+}
+.foundation-4__btn {
+  margin-top: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  background-color: #ff4c38;
+  border-radius: 5px;
+  background-image: url("../img/i_shape_plus_hover_2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.foundation-5 {
+  padding: 100px 0;
+}
+.foundation-5__container {
+  position: relative;
+  grid-gap: 0;
+  grid-template-columns: repeat(12, minmax(10px, 80px));
+}
+.foundation-5__item {
+  text-align: center;
+  grid-column: span 3;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+.foundation-5__item-icon {
+  height: 66px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.foundation-5__item-num {
+  position: relative;
+  padding: 10px 35px;
+  background-color: #fff;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 15px auto;
+  z-index: 1;
+  background-image: url("../img/i_foundation_shape.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.foundation-5__item-text {
+  font-family: "PF Din Display Pro 400";
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.068em;
+  color: #47556b;
+}
+.foundation-5__line {
+  position: absolute;
+  background-image: url("../img/i_foundation_line.png");
+  width: 100%;
+  height: 1px;
+  grid-column: 2/-3;
+}
+.foundation-5__line._1 {
+  top: 150px;
+}
+.foundation-5__line._2 {
+  top: 420px;
+}
+.foundation-5__line-elips {
+  position: absolute;
+  width: 100%;
+  height: 270px;
+  grid-row: span 2;
+  grid-column: -4/-1;
+  top: 150px;
+  background-image: url("../img/i_foundation_line_elips.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  -webkit-transform: translate(10px0);
+      -ms-transform: translate(10px0);
+          transform: translate(10px0);
+}
+.foundation-5__main {
+  max-width: 600px;
+  text-align: center;
+  margin: 50px auto 0;
+}
+
+.foundation-6 {
+  padding: 100px 0 0 0;
+  background-color: #ff4c38;
+}
+.foundation-6__img {
+  grid-column: 1/8;
+  grid-row: 1;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.foundation-6__bg {
+  background-color: #fff;
+  height: 100%;
+  grid-column: 2/-2;
+  grid-row: 1;
+}
+.foundation-6__content {
+  grid-column: 8/-2;
+  grid-row: 1;
+  padding: 30px;
+}
+.foundation-6__title {
+  font-family: "PF Din Display Pro 800";
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: #333333;
+  margin: 10px 0;
+}
+.foundation-6__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px -20px;
+}
+.foundation-6__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 20px;
+}
+.foundation-6__item-icon {
+  width: 57px;
+  height: 55px;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 10px 0;
+}
+.foundation-6__item-text {
+  font-family: "PF Din Display Pro 400";
+  font-size: 18px;
+  letter-spacing: 0.068em;
+  color: #00245b;
+  margin: 10px 0;
+}
+.foundation-6__btn {
+  width: 100%;
+  margin: 30px 0;
+}
+.foundation-6__label {
+  margin: 10px 0;
+  font-family: "PF Din Display Pro 300";
+  font-size: 16px;
+  letter-spacing: 0.075em;
+  color: #555555;
+}
+.foundation-6__link {
+  font-family: "PF Din Display Pro 300";
+  font-size: 16px;
+  letter-spacing: 0.075em;
+  color: #555555;
+  text-decoration: underline;
+}
+
+.foundation-7 {
+  padding: 50px 0;
+}
+.foundation-7__item {
+  grid-column: span 6;
+  padding-left: 50px;
+  background-image: url("../img/i_foundation_check.png");
+  background-repeat: no-repeat;
+  background-position: 0 18px;
+}
+
+.field {
+  border-bottom: 1px solid #999;
+  margin: 20px 0;
+  position: relative;
+}
+.field._focus._bordered .field__label {
+  opacity: 1;
+  z-index: 2;
+  font-size: 14px;
+  top: -15px !important;
+}
+.field._focus .field__label {
+  opacity: 1;
+  z-index: 2;
+  font-size: 14px;
+  top: -5px !important;
+}
+.field._focus .field__input {
+  -webkit-box-shadow: inset 0 0 0 30px #fff;
+          box-shadow: inset 0 0 0 30px #fff;
+  opacity: 1;
+}
+.field._error {
+  border-bottom: 1px solid #ff7575;
+}
+.field._error._bordered {
+  border: 1px solid #ff7575;
+}
+.field._error._bordered .field__label {
+  opacity: 1;
+  z-index: 2;
+  font-size: 14px;
+  top: -15px !important;
+}
+.field._error .field__label {
+  opacity: 1;
+  z-index: 2;
+  font-size: 14px;
+  top: -5px !important;
+  color: #ff7575;
+}
+.field._error .field__input {
+  color: #ff7575;
+  -webkit-box-shadow: inset 0 0 0 30px #fff;
+          box-shadow: inset 0 0 0 30px #fff;
+  opacity: 1;
+}
+.field._valid {
+  border-bottom: 1px solid #31cc3e;
+}
+.field._valid._bordered {
+  border: 1px solid #31cc3e;
+}
+.field._valid._bordered .field__label {
+  opacity: 1;
+  z-index: 2;
+  font-size: 14px;
+  top: -15px;
+}
+.field._valid .field__label {
+  opacity: 1;
+  z-index: 2;
+  font-size: 14px;
+  top: -5px;
+  color: #31cc3e;
+}
+.field._valid .field__input {
+  color: #31cc3e;
+  -webkit-box-shadow: inset 0 0 0 30px #fff;
+          box-shadow: inset 0 0 0 30px #fff;
+  opacity: 1;
+}
+.field._required .field__label::after {
+  content: "*";
+  display: inline-block;
+  color: #ff7575;
+}
+.field._bordered {
+  border: 1px solid #999;
+  margin: 0;
+}
+.field._bordered .field__input {
+  padding: 15px;
+}
+.field._bordered .field__label {
+  left: 10px;
+  top: 9px;
+  background-color: #fff;
+  padding: 5px;
+}
+.field._textarea .field__input {
+  resize: none;
+  height: 200px;
+}
+.field__select::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 12px;
+  height: 12px;
+  display: block;
+  background-image: url("../img/i_arrow_white.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  -webkit-transform: rotate(90deg) translate(-50%, 0);
+      -ms-transform: rotate(90deg) translate(-50%, 0);
+          transform: rotate(90deg) translate(-50%, 0);
+}
+.field__select .field__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.field__input {
+  padding: 15px 0;
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-family: "PF Din Display Pro 400";
+  font-size: 18px;
+  color: #333;
+  position: relative;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.field__label {
+  top: 14px;
+  position: absolute;
+  font-family: "PF Din Display Pro 300";
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  color: #9f9e9e;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 0;
+}
+
+.contact {
+  padding: 50px 0;
+}
+.contact__items {
+  display: grid;
+  grid-template-columns: 320px 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin: 30px 0;
+  background-color: #ddd;
+}
+.contact__item-icon {
+  width: 37px;
+}
+.contact__item-title {
+  margin: 15px 0 20px;
+  font-family: "Muller 800";
+  font-size: 20px;
+  color: #00245b;
+}
+.contact__item-text {
+  font-family: "PF Din Display Pro 400";
+  font-size: 18px;
+  letter-spacing: 0.068em;
+  color: #47556b;
+}
+.contact__maps {
+  margin: 20px 0 50px;
+  position: relative;
+  cursor: pointer;
+}
+.contact__maps-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00000044;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+.contact__maps-wrapper._hidden {
+  background-color: #00000000;
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+  z-index: -1;
+}
+.contact__maps-iframe {
+  width: 100%;
+  height: calc(100vw*0.3);
+}
+.contact__form {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+}
+.contact__form > * {
+  grid-column: span 12;
+}
+.contact__form > .text {
+  margin: 0;
+}
+.contact__form-title {
+  font-family: "Muller 800";
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #00245b;
+}
+.contact__field {
+  grid-column: span 4;
+}
+.contact__checkbox {
+  grid-column: span 6;
+}
+.contact__label {
+  grid-column: span 6;
+  font-family: "PF Din Display Pro 300";
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #8c8c8c;
+  text-align: right;
+}
+
+.checkbox {
+  padding: 10px;
+}
+.checkbox._error {
+  background-color: #ffcbcb;
+}
+.checkbox__input {
+  display: none;
+}
+.checkbox__input:checked + .checkbox__label > .checkbox__icon {
+  background-color: rgba(53, 26, 126, 0.41);
+  background-image: url("../img/i_check.png");
+}
+.checkbox__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.checkbox__icon {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #999;
+  cursor: pointer;
+  margin: 0 10px 0 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.checkbox__text {
+  font-family: "PF Din Display Pro 300";
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #333333;
+}
+.checkbox__link {
+  text-decoration: underline;
+  color: #351a7e;
+}
+
+.popup {
+  max-width: 500px;
+  margin: auto;
+  background-color: #fff;
+  padding: 40px 65px;
+  position: relative;
+}
+.popup__title {
+  margin-bottom: 30px;
+}
+.popup__text {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.popup__field {
+  margin: 20px 0 !important;
+}
+.popup__button {
+  margin: 25px auto;
+}
+.popup__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.popup .checkbox__text {
+  font-size: 16px;
+}
+.popup__link {
+  margin: 0 10px;
+  display: block;
+}
+.popup__icon {
+  border-radius: 20px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.popup__icon:hover {
+  -webkit-box-shadow: 0 0 10px 7px #00000025;
+          box-shadow: 0 0 10px 7px #00000025;
+}
+
+.col-1 {
+  grid-column: span 1;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+.col-6 {
+  grid-column: span 6;
+}
+
+.col-7 {
+  grid-column: span 7;
+}
+
+.col-8 {
+  grid-column: span 8;
+}
+
+.col-9 {
+  grid-column: span 9;
+}
+
+.col-10 {
+  grid-column: span 10;
+}
+
+.col-11 {
+  grid-column: span 11;
+}
+
+.col-12 {
+  grid-column: span 12;
+}
+
+@media (max-width: 1200px) {
+  .display {
+    font-size: 70px;
+  }
+
+  .container {
+    grid-gap: calc(5px + 1.5vw);
+  }
+
+  .container-min {
+    padding: 0 20px;
+  }
+
+  .header__items {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .header__item {
+    margin-right: 20px;
+  }
+  .header__text {
+    display: none;
+  }
+
+  .projects__slider {
+    grid-column: 2/-2;
+  }
+  .projects__arrows {
+    grid-column: 2/-2;
+    grid-row: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .projects__arrow {
+    margin: 20px;
+  }
+
+  .contact__items {
+    grid-template-columns: 300px 1fr 1fr 1fr;
+  }
+
+  .foundation-6 {
+    background-color: #fff;
+    padding: 0;
+  }
+  .foundation-6__bg {
+    display: none;
+  }
+  .foundation-6__img {
+    grid-column: 1/7;
+  }
+  .foundation-6__content {
+    grid-column: 7/-1;
+  }
+
+  .foundation-2 {
+    padding: 0;
+  }
+  .foundation-2__bg {
+    display: none;
+  }
+  .foundation-2__calc {
+    grid-column: 1/-1;
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 960px) {
+  .header__logo {
+    grid-column: 2/10;
+  }
+  .header__items {
+    grid-column: 10/-2;
+  }
+  .header__item {
+    display: none;
+  }
+
+  .mainscreen__slide {
+    background-image: none !important;
+    background-color: #f2f3f5;
+    padding: 50px 0 100px;
+    height: 600px;
+  }
+
+  .about__image {
+    grid-column: 2/-2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about__quote {
+    position: relative;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .about__content {
+    grid-column: 2/-2;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    margin-bottom: 30px;
+  }
+
+  .about-2__img, .about-2__bg {
+    display: none;
+  }
+  .about-2__content {
+    grid-column: 2/-2;
+  }
+
+  .news__h3 {
+    grid-column: 2/-2;
+  }
+  .news__tags {
+    grid-column: 2/-2;
+  }
+  .news__a {
+    grid-column: 2/-2;
+    grid-row: 6;
+    justify-self: center;
+  }
+  .news__a-text {
+    text-decoration: underline;
+  }
+  .news__a-icon {
+    display: none;
+  }
+
+  .footer__logo-img {
+    width: 35px;
+  }
+  .footer__logo-title {
+    font-size: 18px;
+    margin: 0;
+  }
+  .footer__menu {
+    margin: 20px 0 0 20px;
+  }
+  .footer__copyright {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__link {
+    margin: 5px 0;
+  }
+
+  .objects__item {
+    grid-column: span 6;
+  }
+
+  .contact__items {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact__label, .contact__checkbox {
+    grid-column: span 12;
+    text-align: left;
+  }
+
+  .foundation-3__content {
+    max-width: 100%;
+  }
+  .foundation-3 .col-6 {
+    grid-column: span 12;
+  }
+  .foundation-3 .img {
+    display: none;
+  }
+
+  .foundation-4 {
+    padding: 30px 0;
+  }
+  .foundation-4__heading {
+    margin: 20px 0 30px;
+  }
+  .foundation-4__item {
+    grid-column: span 6;
+  }
+  .foundation-4__wrapper {
+    padding: 20px;
+  }
+
+  .foundation-5__item {
+    grid-column: span 6;
+  }
+  .foundation-5__item._1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .foundation-5__item._2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .foundation-5__item._3 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .foundation-5__item._4 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .foundation-5__item._5 {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .foundation-5__item._6 {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  .foundation-5__item._7 {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+  }
+  .foundation-5__item._8 {
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+  }
+  .foundation-5__line-elips, .foundation-5__line {
+    display: none;
+  }
+  .foundation-5__main {
+    -webkit-box-ordinal-group: 10;
+        -ms-flex-order: 9;
+            order: 9;
+  }
+
+  .foundation-6__img {
+    display: none;
+  }
+  .foundation-6__content {
+    grid-column: 2/-2;
+    padding: 30px 0;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .foundation-6__items {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media (max-width: 720px) {
+  .container-min {
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+  }
+
+  .display {
+    font-size: 60px;
+    margin-bottom: -50px;
+  }
+
+  .h1 {
+    font-size: 40px;
+  }
+
+  .h2 {
+    font-size: 40px;
+  }
+
+  .h3 {
+    font-size: 25px;
+  }
+  .h3._small {
+    font-size: 20px;
+  }
+
+  .header__logo-img {
+    width: 30px;
+    margin: 0 10px 0 0;
+  }
+  .header__logo-title {
+    font-size: 16px;
+  }
+  .header__logo {
+    grid-column: 2/-4;
+    grid-row: 1;
+  }
+  .header__items {
+    grid-column: 2/-2;
+  }
+  .header__menu {
+    -webkit-transform: translate(-100%, 0);
+        -ms-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+    grid-column: auto;
+    grid-row: auto;
+    padding: 30px;
+    position: absolute;
+    top: -16px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000cc;
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    z-index: 15;
+  }
+  .header__menu._open {
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .header__menu-link {
+    color: #fff;
+    padding: 6px 0;
+    margin: 6px 0;
+  }
+  .header__menu-btn {
+    display: block;
+    z-index: 20;
+    grid-column: -4/-2;
+    grid-row: 1;
+    align-self: center;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+  }
+  .header__menu-btn._open .header__menu-line {
+    background-color: #ff4c38;
+  }
+  .header__menu-btn._open .header__menu-line._1 {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .header__menu-btn._open .header__menu-line._2 {
+    opacity: 0;
+  }
+  .header__menu-btn._open .header__menu-line._3 {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    margin-top: -16px;
+  }
+  .header__menu-line {
+    width: 25px;
+    height: 3px;
+    background-color: #00245b;
+    margin: 5px 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .header__btn {
+    display: none;
+  }
+
+  .mainscreen__slide {
+    height: 650px;
+  }
+  .mainscreen__content {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+  .mainscreen__btns {
+    margin: 20px 0;
+  }
+  .mainscreen__btn {
+    margin-bottom: 20px;
+  }
+
+  .about__image {
+    display: block;
+  }
+  .about__quote {
+    background-color: #ffffffcc;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    position: absolute;
+  }
+
+  .footer__info {
+    grid-column: 2/-2;
+  }
+  .footer__items {
+    margin: 0;
+  }
+  .footer__menu {
+    grid-column: 2/-2;
+    margin: 20px 0 0;
+  }
+  .footer__line {
+    margin: 0 0 20px;
+  }
+  .footer__copyright {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .breadcrumb {
+    padding: 40px 0;
+  }
+
+  .objects__info {
+    width: 100%;
+  }
+  .objects__info-text {
+    width: 100%;
+    background-color: #eee;
+  }
+  .objects__info-arrow {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+
+  .contact__maps {
+    height: 300px;
+  }
+  .contact__field {
+    grid-column: span 12;
+  }
+
+  .foundation-1__item {
+    grid-column: span 12;
+  }
+
+  .foundation-2__calc {
+    padding: 50px 20px;
+  }
+  .foundation-2__checkbox {
+    grid-column: span 2;
+  }
+  .foundation-2__field {
+    grid-column: span 2;
+    max-width: 480px;
+  }
+
+  .foundation-4__heading {
+    margin: 0;
+  }
+  .foundation-4__container {
+    grid-gap: 20px;
+  }
+  .foundation-4__item {
+    grid-column: span 12;
+  }
+
+  .foundation-7__item {
+    grid-column: span 12;
+  }
+}
+@media (max-width: 480px) {
+  .breadcrumb__display {
+    font-size: 50px;
+  }
+
+  .one-article .col-7 {
+    grid-column: span 12;
+  }
+  .one-article .col-5 {
+    display: none;
+  }
+
+  .h1 {
+    font-size: 30px;
+  }
+  .h1 ._underline {
+    height: 13px;
+  }
+
+  .h2 {
+    font-size: 30px;
+  }
+  .h2 ._underline {
+    height: 13px;
+  }
+
+  .mainscreen__pagination {
+    display: none;
+  }
+
+  .about__img {
+    display: none;
+  }
+  .about__quote {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #00245b;
+  }
+
+  .about-2 {
+    padding: 50px 0;
+  }
+  .about-2__content {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .projects__arrows {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .news {
+    padding: 50px 0;
+  }
+
+  .reviews__slide {
+    margin: 0;
+    padding: 30px;
+  }
+  .reviews__img {
+    grid-column: span 1;
+    grid-row: span 1;
+    max-width: 100px;
+    margin-bottom: 20px;
+  }
+  .reviews__title {
+    grid-column: span 2;
+  }
+  .reviews__text {
+    grid-column: span 2;
+  }
+
+  .footer__menu-item {
+    grid-column: span 2;
+  }
+  .footer__list {
+    margin: 20px 0;
+    grid-gap: 20px;
+  }
+
+  .breadcrumb {
+    padding: 30px 0;
+    background-image: none !important;
+    background-color: #efefef;
+  }
+
+  .objects {
+    padding: 30px 0;
+  }
+  .objects__tags {
+    margin-bottom: 10px;
+  }
+  .objects__item {
+    grid-column: span 12;
+  }
+  .objects__btn {
+    margin: 10px auto 0;
+    padding: 15px 30px;
+  }
+
+  .more-news__item {
+    padding: 0;
+  }
+  .more-news__item:hover {
+    background-color: transparent;
+  }
+
+  .contact__maps {
+    height: 500px;
+  }
+  .contact__items {
+    grid-template-columns: 1fr;
+  }
+
+  .foundation-5__item {
+    grid-column: span 12;
+  }
+
+  .foundation-6__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 20px 0;
+  }
+  .foundation-6__item {
+    margin: 0;
+  }
+}
